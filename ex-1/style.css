@@ -1,1 +1,75 @@
 /* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+.job {
+    text-decoration: underline;
+    text-decoration-color: #ff8345;
+    text-decoration-thickness: 10px;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 24px;
+    width: 50vw;
+}
+.card {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 16px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffe7d3;
+    color: #ff8345;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.content-detail {
+    margin: 24px 0 0 0;
+}
+.sub-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+h4 {
+    margin: 0 0 8px 0;
+}
+p {
+    color: gray;
+}
+span {
+    color: black;
+}
+.card-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #ff8345;
+    border-radius: 10px;
+    padding: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 0 24px;
+    }
+}
